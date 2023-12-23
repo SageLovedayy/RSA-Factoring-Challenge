@@ -30,6 +30,7 @@ void factorize_number(uint64_t number) {
     for (uint64_t i = 2; i * i <= number; i++) {
         while (number % i == 0) {
             printf("%" PRIu64, i);
+
             number /= i;
 
             if (number > 1) {
